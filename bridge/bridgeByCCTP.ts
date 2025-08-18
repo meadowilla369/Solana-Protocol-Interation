@@ -191,7 +191,7 @@ async function bridgeUSDCFromSolTo(
     // 1) burn USDC on source chain
     try {
         const instructions: TransactionInstruction[] = [];
-        instructions.push(await depositForBurn(new anchor.BN(amount), destChain, destAddress));
+        instructions.push(await depositForBurn(amount, destChain, destAddress));
         console.log("Instructions: ", instructions);
 
         const transaction = new Transaction().add(...instructions);
