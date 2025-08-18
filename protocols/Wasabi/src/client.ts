@@ -29,7 +29,7 @@ class SolanaClient {
 (
     async () => {
         const connection = new Connection("https://api.mainnet-beta.solana.com");
-        const keypairPath = path.resolve(__dirname, '../phantom-mainnet-keypair.json'); // Adjust the path to your keypair file
+        const keypairPath = path.resolve(__dirname, '../../../phantom-mainnet-keypair.json'); // Adjust the path to your keypair file
         const wallet = Keypair.fromSecretKey(
             new Uint8Array(JSON.parse(fs.readFileSync(keypairPath, 'utf8')))
         );

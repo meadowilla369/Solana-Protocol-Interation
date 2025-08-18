@@ -5,6 +5,9 @@
     "strict": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@coral-xyz/anchor": ["./node_modules/@coral-xyz/anchor"]
+    }
   }
 }
